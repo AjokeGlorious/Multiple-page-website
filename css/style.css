@@ -2,6 +2,8 @@ body {
   background: radial-gradient(circle at 7.5% 24%, rgb(236, 228, 232) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
   font-family: 'Assistant', sans-serif;
   margin-top: 100px;
+  margin: 100px 0;
+
 }
 :root {
   --primary-color: #6c63ff;
@@ -18,10 +20,6 @@ h3 {
 
 h1 {
   font-size: 96px;
-}
-
-h2 {
-  font-size: 48px;
 }
 
 h3 {
@@ -51,6 +49,10 @@ p {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.primary-link:hover {
   color: white;
 }
 
@@ -87,4 +89,22 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+@media (max-width: 576px) {
+h1 {
+  font-size: 48px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 32px;
+  text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
